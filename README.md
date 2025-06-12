@@ -11,6 +11,8 @@ Each folder listed below links to a game directory containing rules, printables,
 - [silent-uno](./silent-uno/)
 - [skunk-dice](./skunk-dice/)
 - [twisted-farkel-12](./twisted-farkel-12/)
+- [uno](./uno/)
+- [uno-standard](./uno-standard/)
 <!-- CONTENTS_END -->
 
 ---
