@@ -7,9 +7,13 @@ Welcome to the official **Game Night by Mike** collection — a growing library 
 Each folder listed below links to a game directory containing rules, printables, and play materials. Just click a game name to dive in!
 
 <!-- CONTENTS_START -->
+- [farkel](./farkel/)
+- [farkle-hot-streak](./farkle-hot-streak/)
 - [liverpool-rummy](./liverpool-rummy/)
+- [liverpool-thacker](./liverpool-thacker/)
 - [silent-uno](./silent-uno/)
 - [skunk-dice](./skunk-dice/)
+- [spicy-farkel](./spicy-farkel/)
 - [twisted-farkel-12](./twisted-farkel-12/)
 - [uno](./uno/)
 - [uno-standard](./uno-standard/)
