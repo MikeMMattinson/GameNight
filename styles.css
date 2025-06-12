@@ -63,5 +63,5 @@ footer::after {
 
 /* Suit styling helpers */
 .suit { font-weight: bold; font-size: 1.2em; }
-.red { color: red; }
+.red { color: rgb(34, 209, 34); }
 .black { color: black; }
