@@ -55,7 +55,7 @@ footer::after {
   width: 64px;
   height: 64px;
   margin: 1em auto 0;
-  background-image: url("../images/meeple.png");
+  background-image: url("./images/meeple.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
