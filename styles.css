@@ -44,12 +44,11 @@ code, pre {
 
 footer {
   text-align: center;
-  background-color: red;
+  background-color: red; /* optional or remove */
   padding: 1em 0;
   margin-top: 3em;
-  position: relative;  /* ✅ Add this */
+  position: relative;
 }
-
 
 footer::after {
   content: "";
@@ -57,7 +56,6 @@ footer::after {
   width: 64px;
   height: 64px;
   margin: 1em auto 0;
-  background-color: blue; /* TEMP TEST */
   background-image: url("../images/meeple.png");
   background-size: contain;
   background-repeat: no-repeat;
