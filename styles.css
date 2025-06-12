@@ -47,7 +47,9 @@ footer {
   background-color: red;
   padding: 1em 0;
   margin-top: 3em;
+  position: relative;  /* ✅ Add this */
 }
+
 
 footer::after {
   content: "";
@@ -61,3 +63,4 @@ footer::after {
   background-repeat: no-repeat;
   background-position: center;
 }
+
