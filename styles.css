@@ -61,3 +61,7 @@ footer::after {
   background-position: center;
 }
 
+/* Suit styling helpers */
+.suit { font-weight: bold; font-size: 1.2em; }
+.red { color: red; }
+.black { color: black; }
