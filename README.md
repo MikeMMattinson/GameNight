@@ -1,24 +1,23 @@
 # 🎲 Mike's Game Night Rules
 
-This repository hosts a collection of classic and custom game rules, all viewable online via GitHub Pages.
+Welcome to **GameNight** — a curated collection of custom and classic game rules hosted with GitHub Pages.
 
-## 🌐 Live Site
+## 🌐 Live Game Rules Website
 
-Access the published rules here:  
-👉 [https://yourusername.github.io/Games/](https://yourusername.github.io/Games/)
+👉 [https://MikeMMattinson.github.io/GameNight/](https://MikeMMattinson.github.io/GameNight/)
 
 ## 📁 Available Games
 
-Each game has its own folder and `index.html` file:
+Each game lives in its own folder and has a dedicated web page:
 
-- 🔇 [Silent UNO](https://yourusername.github.io/Games/silent-uno/)  
-  A no-talking stealth variant of classic UNO.
+- 🔇 [Silent UNO](https://MikeMMattinson.github.io/GameNight/silent-uno/)  
+  A stealthy twist on UNO where no one can speak — not even to call UNO!
 
-- 🎲 [Twisted Farkel 12](https://yourusername.github.io/Games/twisted-farkel/)  
-  A chaotic dice game with 12 wild rule twists!
+- 🎲 [Twisted Farkel 12](https://MikeMMattinson.github.io/GameNight/twisted-farkel/)  
+  A chaotic Farkel variant with 12 randomized wild rules using 2d6.
 
-- 🦨 [Skunk Dice](https://yourusername.github.io/Games/skunk-dice/)  
-  A press-your-luck dice game played over 5 rounds.
+- 🦨 [Skunk Dice](https://MikeMMattinson.github.io/GameNight/skunk-dice/)  
+  A press-your-luck classic played over five rounds (S-K-U-N-K).
 
 ## 📦 Folder Structure
 
