@@ -51,7 +51,7 @@ html_content = """
 """
 
 for folder in game_folders:
-    html_content += f'        <li><a href="../{folder}/">{folder}</a></li>\n'
+    html_content += f'        <li><a class="game-link" href="../{folder}/">{folder}</a></li>\n'
 
 html_content += """
     </ul>
