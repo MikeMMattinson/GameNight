@@ -53,10 +53,11 @@ code, pre {
 footer::after {
   content: "";
   display: block;
-  margin: 1em auto 0;
   width: 64px;
   height: 64px;
-  background-image: url("../images/meeple.png");
+  margin: 1em auto 0;
+  background-image: url("../images/meeple.png"); /* or "images/meeple.png" */
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
