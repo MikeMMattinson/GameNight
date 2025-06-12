@@ -94,8 +94,8 @@ footer::after {
 
 .liverpool-table {
   width: 80%;
+  margin: 1em auto;
   border-collapse: collapse;
-  margin-top: 1em;
   font-size: 1.1em;
 }
 
@@ -110,4 +110,14 @@ footer::after {
 .liverpool-table thead {
   background-color: #f0f0f0;
   font-weight: bold;
+}
+
+.liverpool-table th:first-child,
+.liverpool-table td:first-child {
+  width: 75%;
+}
+
+.liverpool-table th:last-child,
+.liverpool-table td:last-child {
+  width: 25%;
 }
