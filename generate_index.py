@@ -1,9 +1,9 @@
 import os
 
-# Main directory (where the script is located)
+# Main directory (script location)
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Output index.html path
+# Output path for index.html
 INDEX_PATH = os.path.join(MAIN_DIR, 'contents', 'index.html')
 
 # Ensure 'contents' folder exists
@@ -12,25 +12,28 @@ os.makedirs(os.path.dirname(INDEX_PATH), exist_ok=True)
 # Folders to exclude
 exclude_list = {
     '.git',
-    'images'
+    'images',
 }
 
-# Dynamically scan and filter game folders
+# Find game folders
 game_folders = [
     f for f in os.listdir(MAIN_DIR)
-    if os.path.isdir(os.path.join(MAIN_DIR, f)) and f not in exclude_list and f != 'contents'
+    if os.path.isdir(os.path.join(MAIN_DIR, f))
+    and f not in exclude_list
+    and f != 'contents'
 ]
 
-# Generate HTML content
+# Generate HTML content including external CSS and footer image
 html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Game Index</title>
+    <title>Game Night</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <h1>Available Games</h1>
+    <h1>Game Night Rules</h1>
     <ul>
 """
 
@@ -39,11 +42,15 @@ for folder in sorted(game_folders):
 
 html_content += """
     </ul>
+    <footer>
+        <p>🧩 Game Night by Mike</p>
+        <img src="../images/meeple.png" alt="Meeple" style="width:50px;height:auto;">
+    </footer>
 </body>
 </html>
 """
 
-# Write the generated HTML to file
+# Write HTML content to index.html
 with open(INDEX_PATH, 'w', encoding='utf-8') as f:
     f.write(html_content)
 
