@@ -90,3 +90,24 @@ footer::after {
     font-size: 1.3em;
   }
 }
+
+
+.liverpool-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.liverpool-table th,
+.liverpool-table td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+  background-color: #fdfdfd;
+}
+
+.liverpool-table thead {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
