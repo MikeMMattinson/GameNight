@@ -1,5 +1,11 @@
 import os
 import re
+import argparse
+
+# ----- Parse CLI arguments -----
+parser = argparse.ArgumentParser(description="Generate index.html and README.md for game folders.")
+parser.add_argument("--sorted", action="store_true", help="Sort the list of games alphabetically by title")
+args = parser.parse_args()
 
 # Paths
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -24,13 +30,16 @@ game_folders = [
     and f != 'contents'
 ]
 
+if args.sorted:
+    game_folders.sort()
+
 # ---------- Generate index.html ----------
 html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Game Index</title>
+    <title>Game Night</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -38,7 +47,7 @@ html_content = """
     <ul>
 """
 
-for folder in sorted(game_folders):
+for folder in game_folders:
     html_content += f'        <li><a href="../{folder}/">{folder}</a></li>\n'
 
 html_content += """
@@ -57,7 +66,7 @@ with open(INDEX_PATH, 'w', encoding='utf-8') as f:
 print(f"[OK] index.html generated at {INDEX_PATH}")
 
 # ---------- Generate game list as Markdown ----------
-markdown_list = "\n".join([f"- [{folder}](./{folder}/)" for folder in sorted(game_folders)])
+markdown_list = "\n".join([f"- [{folder}](./{folder}/)" for folder in game_folders])
 
 # ---------- Insert into README.md using README.txt template ----------
 with open(README_TEMPLATE_PATH, 'r', encoding='utf-8') as f:
