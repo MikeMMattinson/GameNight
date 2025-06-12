@@ -50,9 +50,13 @@ code, pre {
   border-radius: 4px;
 }
 
-footer {
-  text-align: center;
-  margin-top: 4em;
-  font-size: 0.9em;
-  color: #888;
+footer::after {
+  content: "";
+  display: block;
+  margin: 1em auto 0;
+  width: 64px;
+  height: 64px;
+  background-image: url("../images/meeple.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
