@@ -7,6 +7,7 @@ Welcome to the official **Game Night by Mike** collection — a growing library 
 Each folder listed below links to a game directory containing rules, printables, and play materials. Just click a game name to dive in!
 
 <!-- CONTENTS_START -->
+- [.venv](./.venv/)
 - [bank-dice](./bank-dice/)
 - [cranium](./cranium/)
 - [cribbage](./cribbage/)
@@ -20,6 +21,7 @@ Each folder listed below links to a game directory containing rules, printables,
 - [skunk-dice](./skunk-dice/)
 - [spicy-farkel](./spicy-farkel/)
 - [twisted-farkel-12](./twisted-farkel-12/)
+- [ultimate-tic-tac-toe](./ultimate-tic-tac-toe/)
 - [uno](./uno/)
 - [uno-standard](./uno-standard/)
 - [yahtzee](./yahtzee/)
